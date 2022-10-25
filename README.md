@@ -15,3 +15,10 @@ Before moving towards our problem statement let's revisit some topics and revise
 7. Slack - It is a real quantity and measured as the difference between data required time and data arrival time. Positive slack means there are no setup and hold violations i.e the correct data is caputred (appropriate setup time) and correct data is latched (appropriate hold time).
 
 We will frequently use this concepts for better understanding and how these terms are implied in the practical design. 
+Moving on let's design a 3-bit async counter
+Being a 3-bit up-counter it will count values from 0-7. Verilog file has been attached in this project along with the scripts to create the project, add code and testbenches. 
+In the simulation we can observe the response w.r.t the test vector provided to the DUT. One can change the clock period or rst period to infer changes in the output. 
+After the simulation we have to synthesize the design so that the HDL code will be synthesized into gate-level representation. The gate level schematic can be viewed in the synthesis tab. At this stage if we try to implement the design and try to generate bitstreams error would be generated as we haven't constrained our design. 
+For this problem statement our primary focus is on how to constraint time in our design. So let's have a step-by-step approach towards the same.
+
+## Constraining Time ##
