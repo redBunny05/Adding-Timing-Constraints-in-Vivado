@@ -1,2 +1,4 @@
 # Adding-Timing-Constraints-in-Vivado
 In this repository I am trying to perform STA( Static Timing Analysis ) using Vivado's Timing Constraint wizard and TCL terminal. In this exercise we will try to analyze some design metrices like timing summary, slack histogram, clock interactions and generate them as well
+Timing is what is today's epicentre of high performance devices having faster computation power. Whether the complexity of the structure is simple or sophisticated, it is properly timed. 
+In this small exercise we will design a 3-bit asynchronus up counter, simulate it with the help of testbench, constraint the design using Constraints wizard and TCL window. Also we will try to observe value of slack when we introduce certain delays to meet hold and setup requirements. And lastly check for any clocking violations using DRC.
