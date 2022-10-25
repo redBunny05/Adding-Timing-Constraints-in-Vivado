@@ -22,3 +22,11 @@ After the simulation we have to synthesize the design so that the HDL code will 
 For this problem statement our primary focus is on how to constraint time in our design. So let's have a step-by-step approach towards the same.
 
 ## Constraining Time ##
+Under the synthesis tab click on Report Timing Summary. We can see that the slack values are calculated to be infinite but this is not the case we want for our design. So now using GUI we will constraint our design.
+Let's divide the procedure into steps for better understanding
+1. Open # Constraints Wizard # from the synthesis tab. This wizard will identify and suggest what constraints should be added to the design. Before implementing we should understand what all recommendations would suit our design.
+2. Afer clicking next, in the primary clock section under the object tab we can see clk as a recommendation for the primary clock. Change the period to 10ns or any suitable value. At this point we need not to add jitter as we are considering it as an ideal clock. However we will add it once we will be able to generate timing reports.
+3. After clicking next Generate clocks section will appear. In our design we didin't assigned any secondary clock so we will skip this part. 
+4. After clicking next skip to the input delays section. is k baad ka kal karenge
+5. 
+6. 
